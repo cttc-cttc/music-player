@@ -53,7 +53,7 @@ let lightIcon, darkIcon;
 let jacketImg;
 let title;
 let lyrics;
-let playTime;
+let incTime, playTime;
 let playBar;
 let playBarValue = 0;
 let timer;
@@ -85,6 +85,7 @@ window.onload = function() {
     jacketImg = document.getElementById('jacketImg');
     title = document.getElementById('title');
     lyrics = document.getElementById('lyrics');
+    incTime = document.getElementById('incTime');
     playTime = document.getElementById('playTime');
     playBar = document.getElementById('playBar');
     pre = document.getElementById('pre');
@@ -206,6 +207,7 @@ function musicPlay() {
 function flow() {
     playBarValue += 10;
     playBar.value = playBarValue;
+    incTime.innerHTML = '0:0' + playBarValue/10;
     
     if(playBarValue == 100) { // 곡 재생이 끝나면 다음 곡 재생
         playBarValue = -10;
@@ -303,6 +305,7 @@ function selectMusic(serialNo) {
         else
             document.getElementsByClassName("nowPlaying")[i].innerHTML = '';
     }
+    incTime.innerHTML = '0:00';
     playBar.value = 0;
     playBarValue = -10;
     currSerialNo = dataList[serialNo-1].serialNo;
