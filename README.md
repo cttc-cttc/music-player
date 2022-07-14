@@ -1,4 +1,4 @@
-# Music Player (demo_PC 버전)
+# Music Player (Demo _ PC 버전)
 javascript를 이용해 뮤직 플레이어의 모양만 구성해 본 웹 페이지  
 
 ### 기능
