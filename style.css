@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    background: linear-gradient(45deg, #eddaa6, #a6d2ed); /* 연한 주황 -> 연한 파랑 */
+}
+#outline{
+    width: 50em;
+    margin: 3em auto;
+    border-radius: 0.5em;
+    background-color : #FFFFFF;
+    box-shadow: 0.5em 0.6em 0.5em #555;
+}
+#layer{
+    background-color: #FFFFFF;
+    border-radius: 0.5em;
+    position: relative;
+    z-index: 1;
+}
+/* 공통 요소 */
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgBtn{
+    width: 2.5em;
+    height: 2.5em;
+}
+.imgBtn:hover{
+    cursor: pointer;
+}
+/* 일반/다크모드 전환버튼 */
+#brightControl{
+    display: flex;
+    justify-content: flex-end;
+}
+.contentMargin{
+    margin: 0.3em;
+}
+/* toggle switch */
+    .wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    #switch {
+      position: absolute;
+      /* hidden */
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    .switch_label {
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      width: 2.7em;
+      height: 1.7em;
+      background-color: #4A4A4A;
+      border-radius: 20px;
+      transition: 0.2s;
+    }
+    .switch_label:hover {
+      background: #5E5E5E;
+    }
+    .onf_btn {
+      position: absolute;
+      top: 0.2em;
+      left: 0.2em;
+      display: inline-block;
+      width: 1.3em;
+      height: 1.3em;
+      border-radius: 20px;
+      background: white;
+      transition: 0.2s;
+    }
+      #switch:checked+.switch_label {
+      background: #0EC444;
+    }
+    #switch:checked+.switch_label:hover {
+      background: #0DAB3C;
+    }
+    /* move */
+    #switch:checked+.switch_label .onf_btn {
+      left: 1.3em;
+      box-shadow: 1px 2px 3px #00000020;
+    }
+#lightIcon{
+    width: 2em;
+    height: 2em;
+}
+#darkIcon{
+    display: none;
+}
+#darkIcon img{
+    width: 2em;
+    height: 2em;
+}
+/* 자켓 이미지 */
+#jacket{
+    width: 20em;
+    height: 20em;
+    overflow: hidden;
+    box-shadow: 0.5em 0.5em 0.5em #000000;
+}
+#jacket img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}	
+#title{
+    margin: 1em 0;
+    font-size: 2em;
+}
+/* 가사 표시 */
+#lyrics{
+    width: 38em;
+    height: 8em;
+    background: #eaeaea;
+}
+/* 플레이바 */
+#playBar{
+    width: 45em;
+    height: 0.7em;
+    background: blue;
+}
+/* 이전곡, 재생/일시정지, 다음곡 버튼 */
+.content:nth-child(5){
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+.content:nth-child(5) .imgBtn{
+    width: 3.8em;
+    height: 3.8em;
+}
+#pause{
+    display: none;
+}
+/* 음소거 버튼, 음량 조절바 */
+#audioPlay{
+    width: 2em;
+    height: 2em;
+}
+#audioMute{
+    display: none;
+    width: 2em;
+    height: 2em;
+}
+#audioBar{
+    width: 30em;
+    height: 0.3em;
+}
+/* 재생리스트, 셔플, 루프 버튼 */
+.container{
+    position: relative;
+}
+.checkIcon{
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+}
+/* 뮤직리스트 테이블 */
+#tableOut{
+    padding-bottom: 0.3em;
+    z-index: 0;
+    transition-property: margin-top, opacity;
+    transition-duration: 1s, 1s;
+}
+td:nth-child(2){
+    width: 100%;
+    padding: 0 1em;
+    font-size: 1.1em;
+    border-bottom: solid thin;
+}
+:root { /* 스타일 속성을 변수화 */
+    --bgColor: #e7e1ed;
+}
+td:nth-child(2):hover{
+    background: var(--bgColor);
+    cursor: pointer;
+}
+.listJacket{
+    width: 4em;
+    height: 4em;
+}
+/* footer */
+footer{
+    height: 10em;
+    background: #333;
+    color: #999;
+    font-size: 1.1em;
+}
+#footerInfo{
+    display: inline-block;
+    width: 70em;
+    margin: 2em auto;
+}
+#footerInfo ul{
+    margin-bottom: 2em;
+    padding: 0;
+}
+#footerInfo ul li{
+    display: inline-flex;
+    align-items: center;
+}
+.footerMenu:hover{
+    cursor: pointer;
+    color: #aaa;
+}
+.footerSpan{
+    font-size: 0.7em;
+}
+#copy{
+    text-align: center;
+    border-top: solid thin;
+}

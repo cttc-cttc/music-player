@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player(Demo)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="outline">
+		<div id="layer">
+<!-- 일반/다크모드 전환버튼 -->
+			<div id="brightControl">
+				<img id="lightIcon" class="contentMargin" alt="light">
+				<div id="darkIcon" class="contentMargin" style="overflow: auto; background-color: #D6D6D6; border-radius: 20px;">
+					<img alt="dark">
+				</div>
+				<div class="wrapper contentMargin">
+			      <input type="checkbox" id="switch" onclick="brCtrl()">
+			      <label for="switch" class="switch_label">
+			        <span class="onf_btn"></span>
+			      </label>
+			    </div>
+			</div>
+<!-- 자켓 이미지 -->
+			<div class="content">
+				<div id="jacket" class="contentMargin">
+					<img id="jacketImg" alt="jacket">
+				</div>
+			</div>
+			<div class="content contentMargin"><span id="title"></span></div> <!-- 곡 정보(작곡가, 제목) -->
+<!-- 가사 표시 -->
+			<div class="content">
+				<div id="lyrics" class="content">
+					- 가사 없음 -
+				</div>
+			</div>
+<!-- 플레이바 -->
+			<div class="content">
+				<div>
+					<div>0:00<span id="playTime" style="float: right;"></span></div>
+					<div>
+						<input id="playBar" class="contentMargin" type="range" min="0" max="100" value="0">
+					</div>
+				</div>
+			</div>
+<!-- 이전곡, 재생/일시정지, 다음곡 버튼 -->
+			<div class="content">
+				<img id="pre" class="imgBtn contentMargin" onclick="preSong()" alt="pre">
+				<img id="pause" class="imgBtn contentMargin" onclick="musicPause()" alt="pause">
+				<img id="play" class="imgBtn contentMargin" onclick="musicPlay()" alt="play">
+				<img id="next" class="imgBtn contentMargin" onclick="nextSong()" alt="next">
+			</div>
+<!-- 음소거 버튼, 음량 조절바 -->
+			<div class="content">
+				<img id="audioPlay" class="imgBtn contentMargin" onclick="audioIconToggle(this.id)" alt="audioPlay">
+				<img id="audioMute" class="imgBtn contentMargin" onclick="audioIconToggle(this.id)" alt="audioMute">
+				<input id="audioBar" class="contentMargin" type="range" min="0" max="100" value="70" oninput="volumnCtrl(this.value)">
+			</div>
+<!-- 재생리스트, 셔플, 루프 버튼 -->
+			<div class="content">
+				<img id="playList" class="imgBtn contentMargin" onclick="playListToggle()" alt="playList">
+				&nbsp;
+				<div class="container">
+					<img id="shuffle" class="imgBtn contentMargin" onclick="shuffleTrack()" alt="shuffle">
+					<img id="shuffleCheck" class="checkIcon" style="display: none;" alt="shuffleCheck">
+				</div>
+				&nbsp;
+				<div class="container">
+					<img id="loop" class="imgBtn contentMargin" onclick="loopOne()" alt="loop">
+					<img id="loopCheck" class="checkIcon" style="display: none;" alt="loopCheck">
+				</div>
+			</div>
+		</div>
+		<div id="tableOut" style="opacity: 1;">
+			<table style="margin: 1em;">
+				
+			</table>
+		</div>
+	</div>
+<!-- footer -->
+	<footer class="content">
+		<div id="footerInfo">
+			<ul class="content">
+				<li><span class="footerMenu">개인정보취급방침</span><span class="footerSpan">&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+				<li><span class="footerMenu">운영정책</span><span class="footerSpan">&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+				<li><span class="footerMenu">사이트맵</span><span class="footerSpan">&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
+				<li><span class="footerMenu">Contact</span></li>
+			</ul>
+			<div id="copy">&copy;000000 All rights reserved.</div>
+		</div>
+	</footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
