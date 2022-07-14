@@ -1,2 +1,17 @@
 # Music Player (demo_PC 버전)
-웹 사이트 보기 : https://cttc-cttc.github.io/music-player/
+javascript를 이용해 뮤직 플레이어의 모양만 구성해 본 웹 페이지  
+
+### 기능
+* 일반모드/다크모드 전환 버튼
+* 재생 버튼
+* 일시정지 버튼
+* 이전 곡 버튼
+* 다음 곡 버튼
+* 볼륨 조절 바
+* 음소거/음소거 해제 버튼
+* 재생리스트 보기/접기 버튼
+* 재생리스트 셔플 버튼
+* 재생리스트 루프 버튼(한 곡만 반복)
+* 재생리스트에서 클릭한 곡 재생
+
+웹 페이지 보기 : https://cttc-cttc.github.io/music-player/
