@@ -16,7 +16,7 @@ const LOOP_MODE = 1;
 // 이미지 및 아이콘 url 상수
 const ALBUM_JACKET_1 = "https://i.pinimg.com/736x/4d/69/59/4d69598b4b73832c51ae0975b9e81b13.jpg";
 const ALBUM_JACKET_2 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC-SD9IpP4HKZPNdrYx3Z8hg5fPzR5kvy1EA&usqp=CAU";
-const ALBUM_JACKET_3 = "https://images.otwojob.com/product/l/P/y/lPyeRApeC7zTmsB.png/o2j/resize/900%3E";
+const ALBUM_JACKET_3 = "https://i.pinimg.com/236x/b5/0b/a9/b50ba9caf1b88f72d56f1d3959060302--album-design-album-covers.jpg";
 const ALBUM_JACKET_4 = "https://newsimg.hankookilbo.com/cms/articlerelease/2021/01/17/fb3de445-6b62-49df-9dab-0fa8efa9cc8c.jpg";
 const ALBUM_JACKET_5 = "https://mblogthumb-phinf.pstatic.net/MjAyMDA3MjBfMjQw/MDAxNTk1MjUyMjAwNjcz.8LU7-jColuXTJ5FB0kItxMjaTEwLQARLN-Lsq9Sf2h0g.qIFvKtYayGfAwUM-62NdQp6TSLyJogOqMfbdd0S36ZQg.JPEG.andelisa/1%EC%95%A8%EB%B2%94%EC%9E%90%EC%BC%93_Ocean_%EC%88%98%EC%A0%95.jpg?type=w800";
 const LIGHT_MODE_ICON = "https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_brightness_low_48px-128.png";
